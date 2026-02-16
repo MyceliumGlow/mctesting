@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="anti_tellraw_filter"
+version="${file.jarVersion}"
+displayName="Anti Tellraw Filter"
+description='''
+Blocks specific advertising text in tellraw commands on the server side.
+'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.anti_tellraw_filter]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.anti_tellraw_filter]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
