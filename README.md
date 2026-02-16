@@ -26,10 +26,12 @@ That’s it.
 ## 1) Requirements
 
 - A **Forge 1.20.1 server**.
-- Java 17.
+- Java 21 (for building this project).
 - This project source code (to build the jar).
 
 > Important: the mod version here targets Forge for Minecraft `1.20.1`.
+> Runtime note: Minecraft/Forge 1.20.1 still expects Java 17 compatible bytecode.
+> This project builds with Java 21 toolchain but compiles with `--release 17` for server compatibility.
 
 ---
 
