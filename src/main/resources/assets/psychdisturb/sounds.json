@@ -1,0 +1,12 @@
+{
+  "whisper_hey": {
+    "sounds": [
+      { "name": "minecraft:ambient/cave/cave1", "type": "event", "volume": 0.15, "pitch": 0.7 }
+    ]
+  },
+  "whisper_breath": {
+    "sounds": [
+      { "name": "minecraft:entity/player/breath", "type": "event", "volume": 0.15, "pitch": 0.75 }
+    ]
+  }
+}
