@@ -14,8 +14,16 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Make Gradle Executable
-        run: chmod +x gradlew
+      - name: Validate Gradle Wrapper
+        uses: gradle/actions/wrapper-validation@v3
+
+      # This part fixes the "No such file" error by generating the wrapper if missing
+      - name: Generate Gradle Wrapper
+        run: |
+          if [ ! -f gradlew ]; then
+            gradle wrapper --gradle-version 8.9
+          fi
+          chmod +x gradlew
 
       - name: Build with Gradle
         run: ./gradlew build
@@ -24,5 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: PsychDisturb-Jar
-          path: build/libs/psychdisturb-*.jar
-          
+          path: build/libs/*.jar
