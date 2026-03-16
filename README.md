@@ -25,7 +25,7 @@ psychdisturb/
 │  │        ├─ lang/en_us.json
 │  │        ├─ lang/tr_tr.json
 │  │        ├─ sounds.json
-│  │        └─ sounds/README.txt
+│  │        └─ sounds/ (optional custom OGG files)
 │  └─ client/
 │     ├─ java/com/example/psyche/client/
 │     │  ├─ PsychDisturbClient.java
@@ -41,8 +41,7 @@ psychdisturb/
 │     │  ├─ CombatMemoryManager.java
 │     │  └─ DebugCommandManager.java
 │     └─ java/com/example/psyche/client/mixin/
-│        ├─ ClientPlayerInteractionManagerMixin.java
-│        └─ EntityRendererMixin.java
+│        └─ ClientPlayerInteractionManagerMixin.java
 │
 └─ src/client/resources/psychdisturb.client.mixins.json
 ```
@@ -76,6 +75,7 @@ You can tweak:
 - This mod uses translation keys for all thought/hallucination strings.
 - English and Turkish localizations are included.
 - Sound assets are represented with examples and can be replaced with custom OGG files.
+- Note: non-asset documentation files (like `README.txt`) should not be placed under `assets/...` to avoid resource-pack path warnings.
 
 
 ## Client Debug Commands

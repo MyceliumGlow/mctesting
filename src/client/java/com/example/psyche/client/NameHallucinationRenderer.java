@@ -52,6 +52,11 @@ public final class NameHallucinationRenderer {
         endTick = now + Math.max(1, ticks);
     }
 
+
+    public static boolean shouldHallucinateAny() {
+        return hauntedPlayer != null;
+    }
+
     public static boolean shouldHallucinate(UUID playerUuid) {
         return hauntedPlayer != null && hauntedPlayer.equals(playerUuid);
     }
