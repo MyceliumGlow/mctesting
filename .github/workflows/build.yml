@@ -14,18 +14,18 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@v3
+      - name: Force Install Gradle 8.7
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.7'
 
-      # This part fixes the "No such file" error by generating the wrapper if missing
-      - name: Generate Gradle Wrapper
-        run: |
-          if [ ! -f gradlew ]; then
-            gradle wrapper --gradle-version 8.9
-          fi
-          chmod +x gradlew
+      - name: Generate the Missing Wrapper
+        run: gradle wrapper
 
-      - name: Build with Gradle
+      - name: Make Wrapper Executable
+        run: chmod +x gradlew
+
+      - name: Build the Mod
         run: ./gradlew build
 
       - name: Upload Finished Mod
