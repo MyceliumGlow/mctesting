@@ -1,0 +1,27 @@
+{
+  "psychdisturb.thought.general.1": "I don't feel so well.",
+  "psychdisturb.thought.general.2": "My fingers are getting cold.",
+  "psychdisturb.thought.general.3": "Why am I thinking this?",
+  "psychdisturb.thought.general.4": "Stop.",
+  "psychdisturb.thought.general.5": "Don't.",
+  "psychdisturb.thought.general.6": "Something is wrong.",
+  "psychdisturb.thought.general.7": "I shouldn't do that.",
+
+  "psychdisturb.thought.violent.1": "Do it.",
+  "psychdisturb.thought.violent.2": "Just one swing.",
+  "psychdisturb.thought.violent.3": "Nobody would notice.",
+
+  "psychdisturb.thought.postkill.1": "I shouldn't have done that.",
+  "psychdisturb.thought.postkill.2": "Why did I do that?",
+  "psychdisturb.thought.postkill.3": "That was a mistake.",
+  "psychdisturb.thought.postkill.4": "Something is wrong with me.",
+
+  "psychdisturb.thought.guilt.1": "I remember that.",
+  "psychdisturb.thought.guilt.2": "Why did I do it?",
+  "psychdisturb.thought.guilt.3": "I can still see it.",
+
+  "psychdisturb.namehallucination.1": "SACRIFICE",
+  "psychdisturb.namehallucination.2": "TARGET",
+  "psychdisturb.namehallucination.3": "WATCHING",
+  "psychdisturb.namehallucination.4": "IT KNOWS"
+}
