@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "psychdisturb",
+  "version": "${version}",
+  "name": "Psychological Disturbances",
+  "description": "Subtle client-side psychological disturbances for Minecraft 1.21.x.",
+  "authors": [
+    "Codex"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.psyche.client.PsychDisturbClient"
+    ]
+  },
+  "mixins": [
+    "psychdisturb.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric": "*",
+    "minecraft": "~1.21.1"
+  }
+}
