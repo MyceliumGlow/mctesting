@@ -81,9 +81,15 @@ public final class HallucinationEffects {
         double z = p.getZ() + Math.cos(yaw) * 2.2;
 
         for (int i = 0; i < 4; i++) {
-            client.world.addParticle(ParticleTypes.SMOKE, false, false,
-                    x, p.getY() + 0.1 + i * 0.18, z,
-                    0.0, 0.01, 0.0);
+            client.particleManager.addParticle(
+                    ParticleTypes.SMOKE,
+                    x,
+                    p.getY() + 0.1 + i * 0.18,
+                    z,
+                    0.0,
+                    0.01,
+                    0.0
+            );
         }
     }
 }
